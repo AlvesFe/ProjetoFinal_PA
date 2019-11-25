@@ -39,5 +39,10 @@ namespace ProjetoFinal_PA
             inicio.ShowDialog();
             this.Close();
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
