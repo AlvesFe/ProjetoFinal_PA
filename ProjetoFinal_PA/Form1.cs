@@ -27,10 +27,10 @@ namespace ProjetoFinal_PA
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            /*this.Hide();
+            this.Hide();
             Form3 produto = new Form3();
             produto.ShowDialog();
-            this.Close();*/
+            this.Close();
         }
 
     }

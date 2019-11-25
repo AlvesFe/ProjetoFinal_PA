@@ -350,7 +350,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(240, 488);
+            this.label13.Location = new System.Drawing.Point(235, 488);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(151, 24);
             this.label13.TabIndex = 29;
@@ -402,6 +402,7 @@
             this.button3.Size = new System.Drawing.Size(33, 33);
             this.button3.TabIndex = 33;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form2
             // 

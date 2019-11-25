@@ -28,3 +28,4 @@ D:\lipeb\OneDrive - Etec Centro Paula Souza\Github\C#\ProjetoFinalPA\ProjetoFina
 D:\lipeb\OneDrive - Etec Centro Paula Souza\Github\C#\ProjetoFinalPA\ProjetoFinal_PA\bin\Debug\ProjetoFinal_PA.exe
 D:\lipeb\OneDrive - Etec Centro Paula Souza\Github\C#\ProjetoFinalPA\ProjetoFinal_PA\bin\Debug\ProjetoFinal_PA.pdb
 D:\lipeb\OneDrive - Etec Centro Paula Souza\Github\C#\ProjetoFinalPA\ProjetoFinal_PA\obj\Debug\ProjetoFinal_PA.Form2.resources
+D:\lipeb\OneDrive - Etec Centro Paula Souza\Github\C#\ProjetoFinalPA\ProjetoFinal_PA\obj\Debug\ProjetoFinal_PA.Form3.resources
