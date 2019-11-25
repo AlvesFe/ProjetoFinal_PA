@@ -17,20 +17,7 @@ namespace ProjetoFinal_PA
             InitializeComponent();
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
+        Cliente objCliente;
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -42,7 +29,33 @@ namespace ProjetoFinal_PA
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            txtBairro.Clear();
+            txtCep.Clear();
+            txtCidade.Clear();
+            txtConfSenha.Clear();
+            txtCpf.Clear();
+            txtEmail.Clear();
+            txtEndereco.Clear();
+            txtNome.Clear();
+            txtNumero.Clear();
+            txtRg.Clear();
+            txtSenha.Clear();
+            comboEstado.SelectedIndex = -1;
+            radioAttackHelicopter.Checked = false;
+            radioFem.Checked = false;
+            radioMasc.Checked = false;
+        }
 
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                objCliente = new Cliente(txtNome.Text,txtEmail.Text,txtEndereco.Text,txtBairro.Text,txtCidade.Text,comboEstado.SelectedItem.ToString(),txtRg.Text,txtCpf.Text,txtNumero.Text,txtCep.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -8,7 +8,6 @@ namespace ProjetoFinal_PA
 {
     public class Produto
     {
-        public string nome, descricao, tipo;
-        public double codBarras, preco, estoque, unidade;
+        public string nome, descricao, tipo, codBarras, preco, estoque, unidade;
     }
 }

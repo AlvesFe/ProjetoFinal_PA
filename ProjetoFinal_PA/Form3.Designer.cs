@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodBarras = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txaDescricao = new System.Windows.Forms.RichTextBox();
+            this.txtPreco = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEstoque = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtUnidade = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.comboTipo = new System.Windows.Forms.ComboBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,13 +60,13 @@
             this.label1.Text = "Cadastro de produtos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // txtCodBarras
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(16, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 26);
-            this.textBox1.TabIndex = 4;
+            this.txtCodBarras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodBarras.Location = new System.Drawing.Point(16, 101);
+            this.txtCodBarras.Name = "txtCodBarras";
+            this.txtCodBarras.Size = new System.Drawing.Size(225, 26);
+            this.txtCodBarras.TabIndex = 4;
             // 
             // label2
             // 
@@ -78,13 +78,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Código de barras";
             // 
-            // textBox2
+            // txtNome
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(16, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(450, 26);
-            this.textBox2.TabIndex = 6;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(16, 157);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(450, 26);
+            this.txtNome.TabIndex = 6;
             // 
             // label3
             // 
@@ -106,22 +106,22 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Descrição";
             // 
-            // richTextBox1
+            // txaDescricao
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Location = new System.Drawing.Point(16, 213);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(450, 96);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
+            this.txaDescricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txaDescricao.Location = new System.Drawing.Point(16, 213);
+            this.txaDescricao.Name = "txaDescricao";
+            this.txaDescricao.Size = new System.Drawing.Size(450, 96);
+            this.txaDescricao.TabIndex = 8;
+            this.txaDescricao.Text = "";
             // 
-            // textBox3
+            // txtPreco
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(16, 339);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(96, 26);
-            this.textBox3.TabIndex = 10;
+            this.txtPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPreco.Location = new System.Drawing.Point(16, 339);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(96, 26);
+            this.txtPreco.TabIndex = 10;
             // 
             // label5
             // 
@@ -133,13 +133,13 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Preço";
             // 
-            // textBox4
+            // txtEstoque
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(134, 339);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(96, 26);
-            this.textBox4.TabIndex = 12;
+            this.txtEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstoque.Location = new System.Drawing.Point(134, 339);
+            this.txtEstoque.Name = "txtEstoque";
+            this.txtEstoque.Size = new System.Drawing.Size(96, 26);
+            this.txtEstoque.TabIndex = 12;
             // 
             // label6
             // 
@@ -151,13 +151,13 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Estoque";
             // 
-            // textBox5
+            // txtUnidade
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(252, 339);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(96, 26);
-            this.textBox5.TabIndex = 14;
+            this.txtUnidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnidade.Location = new System.Drawing.Point(252, 339);
+            this.txtUnidade.Name = "txtUnidade";
+            this.txtUnidade.Size = new System.Drawing.Size(96, 26);
+            this.txtUnidade.TabIndex = 14;
             // 
             // label7
             // 
@@ -179,65 +179,66 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Tipo";
             // 
-            // comboBox1
+            // comboTipo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(370, 339);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(96, 26);
-            this.comboBox1.TabIndex = 16;
+            this.comboTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboTipo.FormattingEnabled = true;
+            this.comboTipo.Location = new System.Drawing.Point(370, 339);
+            this.comboTipo.Name = "comboTipo";
+            this.comboTipo.Size = new System.Drawing.Size(96, 26);
+            this.comboTipo.TabIndex = 16;
             // 
-            // button3
+            // btnVoltar
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(19, 405);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(33, 33);
-            this.button3.TabIndex = 36;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVoltar.BackgroundImage")));
+            this.btnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVoltar.Location = new System.Drawing.Point(19, 405);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(33, 33);
+            this.btnVoltar.TabIndex = 36;
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnLimpar
             // 
-            this.button2.Location = new System.Drawing.Point(247, 395);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 52);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Limpar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLimpar.Location = new System.Drawing.Point(247, 395);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(170, 52);
+            this.btnLimpar.TabIndex = 35;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // button1
+            // btnCadastrar
             // 
-            this.button1.Location = new System.Drawing.Point(70, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 52);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Cadstrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Location = new System.Drawing.Point(70, 395);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(159, 52);
+            this.btnCadastrar.TabIndex = 34;
+            this.btnCadastrar.Text = "Cadstrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(481, 459);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.comboTipo);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtUnidade);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtEstoque);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txaDescricao);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodBarras);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
@@ -251,22 +252,22 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodBarras;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.RichTextBox txaDescricao;
+        private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEstoque;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtUnidade;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboTipo;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }
