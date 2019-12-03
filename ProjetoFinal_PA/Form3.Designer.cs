@@ -181,8 +181,15 @@
             // 
             // comboTipo
             // 
+            this.comboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTipo.FormattingEnabled = true;
+            this.comboTipo.Items.AddRange(new object[] {
+            "Selecione",
+            "Litros",
+            "Kilograma",
+            "Unidade",
+            "Gramas"});
             this.comboTipo.Location = new System.Drawing.Point(370, 339);
             this.comboTipo.Name = "comboTipo";
             this.comboTipo.Size = new System.Drawing.Size(96, 26);
@@ -217,6 +224,7 @@
             this.btnCadastrar.TabIndex = 34;
             this.btnCadastrar.Text = "Cadstrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // Form3
             // 
