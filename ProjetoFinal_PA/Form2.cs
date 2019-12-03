@@ -117,7 +117,7 @@ namespace ProjetoFinal_PA
                 {
                     throw new Exception("CEP deve ter 8 digitos!");
                 }
-                if (radioMasc.Checked == false && radioFem.Checked && radioAttackHelicopter.Checked)
+                if (radioMasc.Checked == false && radioFem.Checked == false && radioAttackHelicopter.Checked == false)
                 {
                     throw new Exception("Sexo não selecionado");
                 }
